@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+height:100%;
+overflow:hidden;
+}
+
+body {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background:#333;
+    text-align: center;
+}
+
+.intro {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+}
+
+.intro h1 {
+    margin-top: -100px;
+    font: 80px 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.intro, .intro:before {
+    background: 50% 50% / cover;
+} 
+
+.intro:before {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url('../img/jeshoots-com-fp1x-X7DwDs-unsplash.jpg');
+    background-size: cover;
+    transform-origin: center center 0;
+    transform:  translateZ(-1px) scale(2);
+    z-index: -1;
+    height: 100vh
+}
+
+.content {
+width:100%;
+position: relative;
+z-index: 1;
+background: url('../img/peter-wendt--r5KSMkyoSc-unsplash.jpg') no-repeat center fixed;
+background-size: cover;
+padding:100px 0;
+height: 80vh;
+}
+
+.content_sub {
+    height: 100vh!important;
+}
+
+.content_sub h1 {
+    padding-bottom: 15px!important;
+}
+
+.container {
+margin:0 auto
+}
+
+.bigtext {
+    background-color: white;
+}
+
+.bigtext p {
+margin-top: 150px;
+font: 32px 'Montserrat', sans-serif;
+color: rgb(0, 0, 0);
+margin-left: 40px;
+margin-right: 40px;
+line-height: 60px;
+}
+
+.textarea {
+background-color:rgba(255, 255, 255, 0.8);
+padding: 40px;
+color: black;
+text-align: center;
+}
+
+.textarea p {
+    font-size: 22px;
+}
+
+.box {
+    border: 2px solid #a4b943;
+    padding: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 40px;
+}
+
+.spacing {
+    margin-top: 50px;
+}
+
+a {
+    font-size: 20px;
+    color: black;
+}
+
+a:hover {
+    color: #a4b943;
+    text-decoration: none;
+}
+
+/* Buttons and links*/
+.btn {
+background-color: #a4b943;
+margin-top: 20px;
+}
+
+.btn a {
+color: white;
+}
+
+.btn:hover{
+background-color: #788441;
+text-decoration: none;
+}
+
+.btn a:hover {
+color: white!important;
+text-decoration: none!important;
+}
+
+.btn-update {
+    margin-top: 0px!important;
+}
+
+/* Form */
+
+form {
+    margin-top: 2em;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+th, td {
+    padding: 15px;
+    }
+th {
+    background-color: rgb(169, 189, 149);
+    font-size: 18px;
+    font-weight: 600;
+    }
+tr {
+    background-color: white;
+    color: black;
+    }
+.labels {
+    font-size: 20px;
+}
+
+
+
+/* Breakpoints */
+
+@media (max-width: 991.98px) {
+    .bigtext p {
+        font-size: 22px;
+        margin-top: 25px;
+    }
+    .button-wrapper {
+        margin-top: 25px;
+    }
+    .intro h1 {
+        margin-top: 25px;
+        font-size: 42px;
+    }
+    /* .box {
+        margin-bottom: 40px;
+    } */
+}
+
+
